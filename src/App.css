@@ -123,17 +123,20 @@ img {
 .section__title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
+  text-align: center;
 }
 
-.section__subtitle{
+.section__subtitle {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: 4rem;
-}
-.section_title,
-.section_subtitle {
   text-align: center;
 }
+
+/* .section_title,
+.section_subtitle {
+  text-align: center;
+} */
 
 /*======== LAYOUT =========*/
 .container {
@@ -177,16 +180,37 @@ img {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
   }
+  .button{
+    padding: 1rem 1.75rem;
+  }
+  .button__icon{
+    width: 22px;
+    height: 22px;
+  }
 }
 /*For medium Devices*/
-@media screen and (max-width: 768px) {  
+@media screen and (max-width: 768px) { 
+  body{
+    margin: 0 0 var(--header-height) 0;
+  }
+  .section{
+    padding: 2rem 0 4rem;
+  } 
+  .section__subtitle{
+    margin-bottom: var(--mb-3);
+  }
 }
 @media screen and (max-width: 576px) {  
 }
 /*For small Devices*/
 @media screen and (max-width: 350px) {  
+
+  :root{
+    --big-font-size: 2.25rem;
+  }
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
+  
 }

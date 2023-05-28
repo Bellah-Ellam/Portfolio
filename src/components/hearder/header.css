@@ -99,6 +99,11 @@
         color: var(--title-color-dark);
     }
 
+    .nav__toggle{
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
 
     .nav__icon,
     .nav__close,
