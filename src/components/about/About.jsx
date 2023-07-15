@@ -14,7 +14,7 @@ const About = () => {
            <img src={AboutImg} alt="" className="about__img" />
            <div className="about__data">
             <Info />
-            <p className="about__description">Data-driven Software developer & Data scientist with a passion for crafting engaging user experiences. 
+            <p className="about__description">Software developer & Data scientist with a passion for crafting engaging user experiences. 
             Proficient in data analysis, visualization, and machine learning, 
             I leverage my skills to transform complex data into actionable insights. 
             With a strong background in web development, I build dynamic and responsive 
