@@ -22,7 +22,8 @@ const Works = () => {
   }, [item]);
 
   const handleClick = (e, index) => {
-    setItem ({name: e.target.textContent})
+    setItem ({name: e.target.textContent});
+    setActive(index)
   };
 
   return (
@@ -30,7 +31,7 @@ const Works = () => {
     <div className="work__filters">
     {projectsNav.map((item,index) => {
       return (
-        <span onClick={(e) => {handleClick(e, index)}} className="work__item" key={index}>{item.name}</span>
+        <span onClick={(e) => {handleClick(e, index)}} className={`${active === index ? 'active-work' : ''}work__item`} key={index}>{item.name}</span>
       )
     })}
    </div>

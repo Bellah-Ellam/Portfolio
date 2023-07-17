@@ -34,6 +34,9 @@ export const projectsNav = [
         name: 'Web Apps'
     },
     {
+        name: 'UI/UX'
+    },
+    {
         name:'Data Science/ML'
     }
 ]
